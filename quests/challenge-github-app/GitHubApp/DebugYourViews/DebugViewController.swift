@@ -19,7 +19,7 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
-    private let myView: UIView = {
+    private let EmptyView: UIView = {
 
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -33,14 +33,14 @@ class DebugViewController: UIViewController {
 
         view.backgroundColor = .white
 
-        view.addSubview(myView)
+        view.addSubview(EmptyView)
 
         NSLayoutConstraint.activate([
 
-            myView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            myView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            myView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            myView.heightAnchor.constraint(equalToConstant: myViewHeight),
+            EmptyView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            EmptyView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            EmptyView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            EmptyView.heightAnchor.constraint(equalToConstant: myViewHeight),
 
         ])
     }
@@ -49,3 +49,44 @@ class DebugViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
+
+
+
+
+/**
+ class DebugViewController: UIViewController {
+
+     private let myView: UIView = {
+
+         let view = UIView()
+         view.translatesAutoresizingMaskIntoConstraints = false
+         return view
+     }()
+
+     private let myViewHeight: CGFloat = 100
+
+     init() {
+         super.init(nibName: nil, bundle: nil)
+
+         view.backgroundColor = .white
+
+         view.addSubview(myView)
+
+         NSLayoutConstraint.activate([
+
+             myView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+             myView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+             myView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+             myView.heightAnchor.constraint(equalToConstant: myViewHeight),
+
+         ])
+     }
+
+     required init?(coder: NSCoder) {
+         fatalError("init(coder:) has not been implemented")
+     }
+ }
+
+ */
