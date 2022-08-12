@@ -54,8 +54,8 @@ final class EmptyView: UIView {
         ])
         
     }
-//    
-//    public func configure(with viewModel: EmptyViewModel) {
+    
+//    public func configure(with viewModel: emptyViewModel) {
 //        self.emptyMessageLabel.text = viewModel.emptyMessage
 //
 //    }
