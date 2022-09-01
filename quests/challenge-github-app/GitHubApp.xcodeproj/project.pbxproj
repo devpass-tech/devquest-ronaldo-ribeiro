@@ -28,6 +28,7 @@
 		9826D9102788B8EA00E05400 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826D90F2788B8EA00E05400 /* SettingsView.swift */; };
 		9826D9132788BAC200E05400 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9826D9122788BAC200E05400 /* DebugViewController.swift */; };
 		D16FF2E1289856CA00F08BD2 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FF2E0289856CA00F08BD2 /* EmptyView.swift */; };
+		D1DE2D5128B9BB0200341E6B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE2D5028B9BB0200341E6B /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		9826D90F2788B8EA00E05400 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9826D9122788BAC200E05400 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		D16FF2E0289856CA00F08BD2 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		D1DE2D5028B9BB0200341E6B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				D16FF2E0289856CA00F08BD2 /* EmptyView.swift */,
+				D1DE2D5028B9BB0200341E6B /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				9826D8FE2788B43F00E05400 /* Service.swift in Sources */,
 				9826D8FC2788B43F00E05400 /* UIColor+Extensions.swift in Sources */,
 				9826D8FA2788B43F00E05400 /* UIViewController+Extensions.swift in Sources */,
+				D1DE2D5128B9BB0200341E6B /* LoadingView.swift in Sources */,
 				D16FF2E1289856CA00F08BD2 /* EmptyView.swift in Sources */,
 				9826D90A2788B48000E05400 /* AppDelegate.swift in Sources */,
 				9826D90B2788B48000E05400 /* SceneDelegate.swift in Sources */,

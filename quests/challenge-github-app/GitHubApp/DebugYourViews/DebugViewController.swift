@@ -19,9 +19,9 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
-    private let emptyView: EmptyView = {
+    private let loadingMessageLabel: LoadingView = {
 
-        let view = EmptyView()
+        let view = LoadingView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -33,14 +33,14 @@ class DebugViewController: UIViewController {
 
         view.backgroundColor = .white
 
-        view.addSubview(emptyView)
+        view.addSubview(loadingMessageLabel)
 
         NSLayoutConstraint.activate([
 
-            emptyView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            emptyView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            emptyView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            emptyView.heightAnchor.constraint(equalToConstant: myViewHeight),
+            loadingMessageLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            loadingMessageLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            loadingMessageLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            loadingMessageLabel.heightAnchor.constraint(equalToConstant: myViewHeight),
 
         ])
     }
